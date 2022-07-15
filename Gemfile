@@ -3,14 +3,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.3'
 
-gem 'rails',          '6.0.2.1'
-gem 'puma',           '3.12.2'
-gem 'sass-rails',     '5.1.0'
-gem 'webpacker',      '4.0.7'
-gem 'turbolinks',     '5.2.0'
-gem 'jbuilder',       '2.9.1'
-gem 'bootsnap',       '1.4.5', require: false
-gem 'pry',            '0.12.2'
+gem 'rails',            '6.0.2.1'
+gem 'bootstrap-sass',   '3.4.1'
+gem 'puma',             '3.12.2'
+gem 'sass-rails',       '5.1.0'
+gem 'webpacker',        '4.0.7'
+gem 'turbolinks',       '5.2.0'
+gem 'jbuilder',         '2.9.1'
+gem 'bootsnap',         '1.4.5', require: false
+gem 'pry',              '0.12.2'
 
 group :development, :test do
   gem 'sqlite3',    '1.4.1'
