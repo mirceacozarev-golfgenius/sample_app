@@ -3,6 +3,7 @@ mircea:
   name: Mircea Cozarev
   email: mirceac@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 archer:
   name: Sterling Archer
