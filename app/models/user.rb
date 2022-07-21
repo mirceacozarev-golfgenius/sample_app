@@ -54,4 +54,14 @@ class User < ApplicationRecord
     self.activation_token = User.new_token
     self.activation_digest = User.digest(activation_token)
   end
+
+  # Activates an account.
+  def activate
+    update_columns(activated: true, activated_at: true)
+  end
+
+  # Sends activation email.
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
 end
